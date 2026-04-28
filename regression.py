@@ -10,7 +10,7 @@ class LinearRegression:
         self.theta = np.dot(np.dot(temp,X.T),Y)
     
     def predict(self,X):
-        pass
+        return np.dot(X,self.theta)
     
     def score(self,X,Y):
         pass
