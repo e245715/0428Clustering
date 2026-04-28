@@ -13,4 +13,5 @@ class LinearRegression:
         return np.dot(X,self.theta)
     
     def score(self,X,Y):
-        pass
+        error = self.predict(X) - Y
+        return (error**2).sum()
